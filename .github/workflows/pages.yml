@@ -22,10 +22,10 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
-      - run: npm run build      # kører "next build && next export"
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: 'out'           # Next export-folder
+          path: 'out'
   deploy:
     needs: build
     runs-on: ubuntu-latest
