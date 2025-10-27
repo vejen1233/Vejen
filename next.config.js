@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
-const REPO = 'vejen'; // fx 'vejen'
-const isPages = true;
-
 const nextConfig = {
-  output: 'export',            // giver statiske filer (krav til GitHub Pages)
+  output: 'export',           // laver statiske filer til Pages
   images: { unoptimized: true },
-  basePath: isPages ? `/${REPO}` : '',
-  assetPrefix: isPages ? `/${REPO}/` : ''
+  basePath: '/vejen',         // sti = dit repo-navn (små bogstaver)
+  assetPrefix: '/vejen/'
 };
-
 module.exports = nextConfig;
