@@ -5,4 +5,5 @@ const nextConfig = {
   basePath: '/vejen',
   assetPrefix: '/vejen/',
 };
+
 module.exports = nextConfig;
