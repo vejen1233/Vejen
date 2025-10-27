@@ -12,7 +12,7 @@ const PRODUCTS = [
 
 const fmtDKK = (n) => n.toLocaleString("da-DK", { style: "currency", currency: "DKK" });
 
-export default function Vejen() {
+export default function vejen() {
   const [cart, setCart] = useState({});
   const items = useMemo(() => PRODUCTS.map(p => ({ ...p, qty: cart[p.id] || 0 })), [cart]);
   const total = useMemo(() => items.reduce((s, it) => s + it.price * it.qty, 0), [items]);
@@ -36,7 +36,7 @@ export default function Vejen() {
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2">
             <span className="inline-block h-8 w-8 rounded-2xl bg-neutral-900 text-white grid place-items-center font-bold">V</span>
-            <span className="font-semibold tracking-tight text-lg">Vejen</span>
+            <span className="font-semibold tracking-tight text-lg">vejen</span>
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#ydelser" className="hover:opacity-80">Ydelser</a>
@@ -234,7 +234,7 @@ export default function Vejen() {
 
         <footer className="border-t border-neutral-200 text-sm">
           <div className="mx-auto max-w-6xl px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
-            <p>© {new Date().getFullYear()} Vejen – Økonomisk rådgivning</p>
+            <p>© {new Date().getFullYear()} vejen – Økonomisk rådgivning</p>
             <div className="flex gap-4 text-neutral-600">
               <a href="#" className="hover:underline">Handelsbetingelser</a>
               <a href="#" className="hover:underline">Privatliv</a>
