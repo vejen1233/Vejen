@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const REPO = 'Vejen'; // fx 'vejen'
+const REPO = 'vejen'; // fx 'vejen'
 const isPages = true;
 
 const nextConfig = {
