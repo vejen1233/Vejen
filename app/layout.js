@@ -1,4 +1,4 @@
-export const metadata = { title: "Vejen", description: "Økonomisk rådgivning" };
+export const metadata = { title: "vejen", description: "Økonomisk rådgivning" };
 
 export default function RootLayout({ children }) {
   return (
