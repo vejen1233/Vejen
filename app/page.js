@@ -27,7 +27,7 @@ export default function vejen() {
       .map(it => `${it.title} × ${it.qty} — ${fmtDKK(it.price * it.qty)}`).join("%0D%0A");
     const subject = encodeURIComponent("Bestilling – Vejen økonomisk rådgivning");
     const body = `Hej Vejen,%0D%0A%0D%0AJeg vil gerne bestille:%0D%0A${orderLines}%0D%0A%0D%0ASamlet: ${fmtDKK(total)}%0D%0A%0D%0AMit navn:%0D%0AMit telefonnummer:%0D%0AMine ønsker / bemærkninger:`;
-    window.location.href = `mailto:kontakt@vejen.dk?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:mariavejenfarbaek@hotmail.com?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -69,7 +69,6 @@ export default function vejen() {
               <li>Personlig gennemgang af budget, faste udgifter og mål</li>
               <li>Plan for nedbringelse af gæld og opbygning af opsparing</li>
               <li>Introduktion til investering i aktier og fonde (ikke individuel anbefaling)</li>
-              <li>Handlingsplan for de næste 90 dage</li>
             </ul>
           </div>
         </section>
@@ -142,7 +141,7 @@ export default function vejen() {
         {/* Råd */}
         <section id="raad" className="bg-white border-y border-neutral-200">
           <div className="mx-auto max-w-6xl px-4 py-12">
-            <h2 className="text-2xl font-bold">Pengeråd fra Vejen</h2>
+            <h2 className="text-2xl font-bold">Pengeråd fra vejen</h2>
             <div className="mt-6 grid lg:grid-cols-3 gap-6">
               <div className="lg:col-span-2 space-y-4">
                 <details className="rounded-2xl border border-neutral-200 p-4 bg-white">
@@ -172,7 +171,6 @@ export default function vejen() {
                     <p>Start simpelt: brede indeksfonde/ETF'er, spredning og langsigtet horisont. Hold omkostningerne nede og undgå at time markedet.</p>
                     <ul className="list-disc pl-5 text-sm">
                       <li>Automatisk månedsopsparing (DCA).</li>
-                      <li>Vær opmærksom på skattemæssige forhold (fx aktiesparekonto m.m.).</li>
                       <li>Denne side yder ikke personlig investeringsrådgivning.</li>
                     </ul>
                   </div>
@@ -211,7 +209,7 @@ export default function vejen() {
                 const besked = data.get("besked");
                 const subject = encodeURIComponent("Henvendelse – Vejen");
                 const body = encodeURIComponent(`Navn: ${navn}\nEmail: ${email}\n\n${besked}`);
-                window.location.href = `mailto:kontakt@vejen.dk?subject=${subject}&body=${body}`;
+                window.location.href = `mailto:mariavejenfarbaek@hotmail.com?subject=${subject}&body=${body}`;
               }}
               className="mt-6 grid md:grid-cols-2 gap-4"
             >
